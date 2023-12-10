@@ -1,0 +1,36 @@
+{
+  "name": "open-sac-projects",
+  "version": "0.0.1-alpha.1",
+  "description": "Open Sacramento Projects",
+  "private": true,
+  "scripts": {
+    "start": "concurrently \"eleventy --serve\" \"sass --watch styles:public/css\"",
+    "build": "sass --quiet styles:public/css && eleventy --quiet",
+    "test": "npx babel tests --out-dir tests/babel && npx jest tests/babel"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/code4sac/projects.git"
+  },
+  "keywords": [],
+  "author": {
+    "name": "project",
+    "email": "project@project.com",
+    "url": "https://project.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/code4sac/projects/issues"
+  },
+  "homepage": "https://github.com/code4sac/projects#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1",
+    "@babel/cli": "^7.23.0",
+    "@babel/core": "^7.23.2",
+    "@babel/preset-env": "^7.23.2",
+    "concurrently": "^8.2.2",
+    "jest": "^29.7.0",
+    "js-yaml": "^4.1.0",
+    "sass": "^1.69.5"
+  }
+}
