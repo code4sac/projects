@@ -1,4 +1,5 @@
 const yaml = require('js-yaml')
+const { EleventyHtmlBasePlugin } = require('@11ty/eleventy')
 
 /**
  * Configuration for Eleventy.
@@ -14,6 +15,7 @@ const eleventyConfig = config => {
   config.addPassthroughCopy('public')
   config.addDataExtension('yml', contents => yaml.load(contents))
   config.addWatchTarget('./styles/')
+  config.addPlugin(EleventyHtmlBasePlugin)
   return {
     dir: {
       input: 'content',
