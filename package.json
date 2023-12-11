@@ -6,6 +6,7 @@
   "scripts": {
     "start": "concurrently \"eleventy --serve\" \"sass --watch styles:public/css\"",
     "build": "sass --quiet styles:public/css && eleventy --quiet",
+    "build-ghpages": "sass --quiet styles:public/css && eleventy --quiet --pathprefix projects",
     "test": "npx babel tests --out-dir tests/babel && npx jest tests/babel"
   },
   "repository": {

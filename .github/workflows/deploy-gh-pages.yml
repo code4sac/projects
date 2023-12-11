@@ -19,7 +19,7 @@ jobs:
       - name: Build Next.js static site
         run: |
           npm install
-          npm run build
+          npm run build-ghpages
       - name: Ignore Jekyll
         run: |
           touch _site/.nojekyll
