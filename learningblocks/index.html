@@ -1,0 +1,287 @@
+<!--
+Base application layout. Contains libraries and metadata that are used for all pages.
+Usage: Include `layout: layouts/base` in the Front Matter of a template file.
+-->
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <title></title>
+  <link rel="icon" href="/public/img/favicon.ico">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!--  Load application CSS -->
+  <link rel="stylesheet" href="/public/css/main.css">
+  <!-- Load application Javascript -->
+  <script src="/public/js/app.js" type="module" async></script>
+  <!--  SEO meta data-->
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Article",
+      "name": "Project",
+      "image": [
+        "http://project.com/public/img/openbudget.png",
+        "http://project.com/public/img/trashai.png",
+        "http://project.com/public/img/learningBlocks.png"
+      ]
+    }
+  </script>
+</head>
+
+<body>
+  <!--Load page layout-->
+  
+<!--
+Home layout with navigation bar and footer.
+-->
+<div class="full-width">
+  <!--
+Default application navigation bar.
+-->
+<nav id="navbar-toolbar" class="navbar-toolbar">
+  <div id="navbar-toolbar-main">
+    <div class="navbar-toolbar-content">
+      <!--
+      Left section.
+      -->
+      <div class="navbar-left-container">
+        <a class="navbar-left-section" href="/">
+          <img src="/public/img/logo_opensac_all.png" alt="Project logo" height="60" width="200">
+        </a>
+      </div>
+      <!--
+      Middle section.
+      -->
+      <div class="navbar-middle-container">
+        <ul class="navbar-middle-section">
+          <li class="navbar-link">
+            <a href="/">Home</a>
+          </li>
+          <li class="navbar-link">
+            <a href="/opensac">Opensac.org</a>
+          </li>
+          <li class="navbar-link">
+            <a href="/learningblocks">Learning Blocks</a>
+          </li>
+        </ul>
+      </div>
+      <!--
+      Right section.
+      -->
+      <div class="navbar-right-container">
+        <div class="navbar-right-section">
+          <div class="navbar-extended-parent-link">
+<!--            <a href="#">-->
+<!--              Get Involved-->
+<!--              <img class="navbar-nested-extended-link-image" src="/public/img/chevron-down.png" width="16" height="16"-->
+<!--                alt="Get involved navigation links">-->
+<!--            </a>-->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="navbar-toolbar-extended" class="hidden">
+    <div class="navbar-extended-content">
+      <!--
+       Extended section mobile.
+       -->
+      <div class="navbar-extended-mobile-container">
+        <div class="navbar-extended-mobile-content">
+          <ul>
+            <li class="navbar-extended-mobile-section">
+              <a href="/projects">Projects</a>
+            </li>
+            <li class="navbar-extended-mobile-section">
+              <a href="/project-pitch">Pitch a Project</a>
+            </li>
+            <li class="navbar-extended-mobile-section">
+              <a href="/meetup">Meetup</a>
+            </li>
+            <li class="navbar-extended-mobile-section">
+              <a href="/faqs">FAQs</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!--
+      Extended section desktop.
+      -->
+      <div class="navbar-extended-desktop-container">
+        <div class="navbar-extended-desktop-content-container">
+          <div class="navbar-extended-desktop-left-container">
+            <div class="navbar-extended-desktop-left-section">
+              Get started today and volunteer with us to drive positive change through technology, making a meaningful
+              impact in your community!
+              <a class="navbar-extended-desktop-button" href="/projects">Get Started</a>
+            </div>
+            <div class="navbar-extended-desktop-left-section">
+              Explore our projects and discover how you can contribute your skills to drive innovation and create
+              positive
+              change.
+              <a class="navbar-extended-desktop-button" href="/projects">See Projects</a>
+            </div>
+            <div class="navbar-extended-desktop-left-section">
+              Explore our projects and discover how you can contribute your skills to drive innovation and create
+              positive
+              change.
+              <a class="navbar-extended-desktop-button" href="/project-pitch">Pitch a Project</a>
+            </div>
+          </div>
+          <div class="navbar-extended-desktop-right-container">
+            <div class="navbar-extended-desktop-right-section">
+              Join us for our weekly meetings on <a href="/meetup">meetup</a>.
+            </div>
+            <div class="navbar-extended-desktop-right-section">
+              For any questions, visit our <a href="/faqs">FAQs</a>.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+  <div class="full-width">
+    <!--
+All projects page.
+-->
+<h1>Learning Blocks community project page</h1>
+<a href=""></a>
+
+
+<ul class="documentation-list">
+  <li>
+    <a href="https://github.com/code4sac/learning-blocks/blob/main/Documentation%20Directory/web_based_read_me.md"
+       title="Web-based read me">
+      <h2>Web-based read me</h2>
+      <p>This document provides an overview of the Learning Blocks project and how to use it.</p>
+    </a>
+  </li>
+  <li>
+    <a href="https://github.com/code4sac/learning-blocks/blob/main/Documentation%20Directory/Postman_documentation.md"
+       title="Postman documentation">
+      <h2>Postman documentation</h2>
+      <p>This document provides instructions on how to use Postman to interact with the Learning Blocks API.</p>
+    </a>
+  </li>
+  <li>
+    <a
+      href="https://github.com/code4sac/learning-blocks/blob/main/Documentation%20Directory/Docker_version_documentation.md"
+      title="Docker version documentation">
+      <h2>Docker version documentation</h2>
+      <p>This document provides instructions on how to set up and use the Docker version of the Learning Blocks
+        project.</p>
+    </a>
+  </li>
+  <li>
+    <a
+      href="https://github.com/code4sac/learning-blocks/blob/main/Documentation%20Directory/Cavas_api_documentation.md"
+      title="Canvas API documentation">
+      <h2>Canvas API documentation</h2>
+      <p>This document provides instructions on how to use the Canvas API in the Learning Blocks project.</p>
+    </a>
+  </li>
+  <li>
+    <a
+      href="https://github.com/code4sac/learning-blocks/blob/main/Documentation%20Directory/Individual_Python_Scripts_read_me.md"
+      title="Individual Python Scripts read me">
+      <h2>Individual Python Scripts read me</h2>
+      <p>This document provides an overview of the individual Python scripts included in the Learning Blocks
+        project.</p>
+    </a>
+  </li>
+  <li>
+    <a href="https://github.com/code4sac/learning-blocks/blob/main/Documentation%20Directory/Problem_Statement.md"
+       title="Problem Statement">
+      <h2>Problem Statement</h2>
+      <p>This document describes the problem that the Learning Blocks project solves.</p>
+    </a>
+  </li>
+  <li>
+    <a href="https://github.com/code4sac/learning-blocks/blob/main/Documentation%20Directory/Readme.md" title="Readme">
+      <h2>Readme</h2>
+      <p>This document provides a high-level overview of the Learning Blocks project.</p>
+    </a>
+  </li>
+  <li>
+    <a href="https://github.com/code4sac/learning-blocks/blob/main/Documentation%20Directory/Running_with_VSCode.md"
+       title="Running with VSCode">
+      <h2>Running with VSCode</h2>
+      <p>This document provides instructions on how to set up and run the Learning Blocks project in Visual Studio
+        Code.</p>
+    </a>
+  </li>
+  <li>
+    <a href="https://github.com/code4sac/learning-blocks/blob/main/Documentation%20Directory/SSSP_Read_Me.md"
+       title="SSSP Read Me">
+      <h2>SSSP Read Me</h2>
+      <p>This document describes the SSSP algorithm and how it is implemented in the Learning Blocks project.</p>
+    </a>
+  </li>
+  <li>
+    <a
+      href="https://github.com/code4sac/learning-blocks/blob/main/Documentation%20Directory/Stand_alone_FastAPI_setup.md"
+      title="Stand-alone FastAPI setup">
+      <h2>Stand-alone FastAPI setup</h2>
+      <p>This document provides instructions on how to set up and run the Learning Blocks project as a stand-alone
+        FastAPI application.</p>
+    </a>
+  </li>
+</ul>
+
+  </div>
+  <!--
+Default application footer.
+-->
+<footer>
+    <div class="footerContainerTop">
+        <div class="footerMessage">
+            <h2 class="footerMessageHeader">Get Involved.</h2>
+            <p class="footerMessageParagraph">Project is a tax-deductible civic-tech community dedicated to using
+                technology and open data for positive civic change in Locale.</p>
+        </div>
+
+        <div class="footerActionLinks">
+            <p class="footerActionLinksItem">
+                Join us for our weekly meetings on <a href="/" class="footerActionLinksAnchor">meetup.</a>
+            </p>
+            <p class="footerActionLinksItem">
+                See our <a href="/" class="footerActionLinksAnchor">projects.</a>
+            </p>
+            <p class="footerActionLinksItem">
+                For any questions, visit our <a href="/" class="footerActionLinksAnchor">FAQs.</a>
+            </p>
+        </div>
+
+        <div class="footerSocialMedia">
+            <a href="/" class="footerSocialMediaLink">
+                <img src="/public/img/socialmedia/facebook.svg" alt="Facebook" class="footerSocialMediaIcon">
+            </a>
+            <a href="/" class="footerSocialMediaLink">
+                <img src="/public/img/socialmedia/twitter.svg" alt="X" class="footerSocialMediaIcon">
+            </a>
+            <a href="/" class="footerSocialMediaLink">
+                <img src="/public/img/socialmedia/youtube.svg" alt="Youtube" class="footerSocialMediaIcon">
+            </a>
+        </div>
+    </div>
+
+    <div class="footerBottomContainer">
+        <div class="footerBottomTitle">Open Sacramento</div>
+        <div class="footerBottomLinksContainer">
+            <a href="/" class="footerBottomLink">get started</a>
+            <a href="/" class="footerBottomLink">our team</a>
+            <a href="/" class="footerBottomLink">code of conduct</a>
+        </div>
+    </div>
+</footer>
+</div>
+</body>
+
+</html>

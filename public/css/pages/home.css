@@ -1,0 +1,554 @@
+/*
+Application color theme.
+ */
+/* 
+Screen breakpoints
+*/
+/*
+Application color theme.
+ */
+/* 
+Screen breakpoints
+*/
+/*
+Application fonts.
+ */
+/*
+Home page layout
+ */
+.home-section-dark {
+  background-color: #060718;
+  color: #f7f7f8;
+}
+
+.home-landing-image {
+  background-image: url("/public/img/towerbridgenight.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right bottom;
+}
+@media (max-width: 576px) {
+  .home-landing-image {
+    background-image: none;
+  }
+}
+
+.home-landing-container {
+  width: 40%;
+  min-height: 721px;
+  padding: 0 30px 0 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 24px;
+}
+@media (max-width: 1200px) {
+  .home-landing-container {
+    width: 70%;
+  }
+}
+@media (max-width: 768px) {
+  .home-landing-container {
+    width: 100%;
+    padding: 96px 40px 0px 40px;
+    justify-content: start;
+    padding-top: 30%;
+  }
+}
+@media (max-width: 576px) {
+  .home-landing-container {
+    min-height: 0;
+  }
+}
+
+.home-landing-heading {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56px;
+  margin: 0;
+}
+@media (max-width: 576px) {
+  .home-landing-heading {
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 31px;
+    line-height: 38px;
+  }
+}
+
+.home-landing-heading span {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 39px;
+  line-height: 47px;
+}
+@media (max-width: 576px) {
+  .home-landing-heading span {
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 31px;
+    line-height: 38px;
+  }
+}
+
+.home-section-landing-image {
+  display: none;
+}
+@media (max-width: 576px) {
+  .home-section-landing-image {
+    display: block;
+    width: 100%;
+    margin-top: 23px;
+  }
+}
+
+.home-buttons-group {
+  width: fit-content;
+  display: flex;
+  gap: 20px;
+}
+
+.home-button {
+  color: #fffcf5;
+  background-color: transparent;
+  border: solid #ffc107 1px;
+  border-radius: 6px;
+  padding: 16px 24px;
+  text-decoration: none;
+  width: fit-content;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 0.9em;
+  line-height: 18px;
+}
+@media (max-width: 400px) {
+  .home-button {
+    padding: 10px 15px;
+    font-size: 0.7em;
+  }
+}
+
+.home-button-alt {
+  /* alternative colors */
+  background-color: #ffc107;
+  color: #060718;
+}
+
+.home-button-numbered {
+  color: #ffc107;
+}
+
+.home-section-light {
+  color: #060718;
+  background-color: #fffcf5;
+  padding: 96px 80px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+@media (max-width: 768px) {
+  .home-section-light {
+    padding: 48px 40px;
+    flex-direction: column;
+  }
+}
+
+.home-section-light-container {
+  width: 50%;
+  position: relative;
+}
+@media (max-width: 768px) {
+  .home-section-light-container {
+    width: 100%;
+  }
+}
+
+.home-section-heading-underline::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 1px;
+  width: 43px;
+  border-bottom: 4px solid #060718;
+}
+
+.home-section-dark-container {
+  position: relative;
+}
+
+.underline-alt::after {
+  border-bottom: 4px solid #f7f7f8;
+}
+
+.donate-section-underline::after {
+  padding-bottom: 18px;
+  border-bottom: 8px solid #f7f7f8;
+  width: 101px;
+}
+
+.heading-section {
+  color: #a9aab1;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.heading-section-alt {
+  color: #ffc107;
+}
+
+.heading-section-sub {
+  margin: 10px 0;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 39px;
+  line-height: 47px;
+}
+@media (max-width: 576px) {
+  .heading-section-sub {
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 31px;
+    line-height: 38px;
+  }
+}
+
+.home-section-paragraph {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  margin: 0;
+}
+@media (max-width: 576px) {
+  .home-section-paragraph {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+
+.home-section-paragraph-bold {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.home-section-paragraph-anchor {
+  color: #060718;
+  font-weight: 700;
+}
+
+.home-about-container {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+}
+@media (max-width: 992px) {
+  .home-about-container {
+    width: auto;
+    padding: 48px 40px 0 40px;
+    margin: auto;
+  }
+}
+
+.home-section-dark-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 192px 0 192px 80px;
+}
+@media (max-width: 992px) {
+  .home-section-dark-flex {
+    padding: 0;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+}
+
+.home-about-image {
+  background-image: url("/public/img/open_data_day_curved.png");
+  background-repeat: no-repeat;
+  background-size: 50% 75%;
+  background-position: right center;
+}
+@media (min-width: 1700px) {
+  .home-about-image {
+    background-size: 40% 80%;
+  }
+}
+@media (max-width: 1400px) {
+  .home-about-image {
+    background-size: 50% 60%;
+  }
+}
+@media (max-width: 1200px) {
+  .home-about-image {
+    background-size: 50% 50%;
+  }
+}
+@media (max-width: 992px) {
+  .home-about-image {
+    background-image: none;
+  }
+}
+
+.home-section-action-image {
+  display: none;
+  margin-top: 40px;
+}
+@media (max-width: 992px) {
+  .home-section-action-image {
+    display: block;
+    height: 50vw;
+    margin-bottom: 80px;
+  }
+}
+@media (max-width: 768px) {
+  .home-section-action-image {
+    display: block;
+    height: 70vw;
+    margin-bottom: 80px;
+  }
+}
+
+.home-services-container {
+  padding: 0 80px 96px 80px;
+}
+@media (max-width: 992px) {
+  .home-services-container {
+    padding: 0 20px 96px 20px;
+  }
+}
+@media (max-width: 768px) {
+  .home-services-container {
+    padding: 48px 40px;
+  }
+}
+
+.home-numbered-grid {
+  margin: 40px 0 0 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 24px;
+}
+@media (max-width: 768px) {
+  .home-numbered-grid {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+  }
+}
+
+.home-numbered-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  max-width: 600px;
+}
+
+.home-numbered-header {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 31px;
+  line-height: 38px;
+  text-align: center;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+@media (max-width: 576px) {
+  .home-numbered-header {
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 32px;
+  }
+}
+
+.home-numbered-paragraph {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+}
+
+.home-projects-section {
+  padding: 96px 80px;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: space-between;
+  gap: 30px;
+}
+@media (max-width: 1200px) {
+  .home-projects-section {
+    flex-direction: column;
+    justify-content: center;
+    padding: 48px 40px;
+    gap: 80px;
+  }
+}
+
+.home-projects-info-container {
+  width: 50%;
+  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 40px;
+}
+@media (max-width: 1400px) {
+  .home-projects-info-container {
+    width: 100%;
+  }
+}
+
+.home-section-project-image {
+  width: 100%;
+  aspect-ratio: 2/1;
+}
+
+.swiper {
+  width: 100%;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+  gap: 20px;
+}
+
+.swiper-slide {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  padding: 0 1%;
+}
+
+.slide-content {
+  width: 100%;
+}
+
+@media (max-width: 992px) {
+  .slide-content p {
+    margin-bottom: 10px;
+  }
+}
+
+.swiper-pagination {
+  position: relative !important;
+}
+
+.swiper-pagination-bullet {
+  width: 15px !important;
+  height: 15px !important;
+  background-color: #fffcf5 !important;
+  opacity: 1 !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: #ffc107 !important;
+}
+
+.swiper-slide .slide-content {
+  opacity: 0;
+  transition: opacity 0s;
+}
+
+.swiper-slide-active .slide-content {
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+.donate-section {
+  padding: 64px 80px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+@media (max-width: 992px) {
+  .donate-section {
+    flex-direction: column;
+    padding: 64px 40px;
+  }
+}
+
+.donate-section-paragraph-container {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 1400px) {
+  .donate-section-paragraph-container {
+    width: 100%;
+  }
+}
+
+.heading-large-section-sub {
+  margin: 10px 0;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 56px;
+}
+@media (max-width: 992px) {
+  .heading-large-section-sub {
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 31px;
+    line-height: 38px;
+  }
+}
+
+.home-section-dark-paragraph {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  margin: 0 0 30px 0;
+}
+@media (max-width: 992px) {
+  .home-section-dark-paragraph {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+
+.home-section-dark-paragraph span {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  margin: 0 0 30px 0;
+}
+@media (max-width: 992px) {
+  .home-section-dark-paragraph span {
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+
+/*# sourceMappingURL=home.css.map */
