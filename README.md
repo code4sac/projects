@@ -24,3 +24,21 @@ Thanks for co-creating with us!
 
 ### Note for Delivery Leads
 Once a project becomes active, be sure to close the issue and add the repo to our [Code for Sacramento Projects List](https://docs.google.com/spreadsheets/d/1k5gff8Mvs6rb3sz6aLll5Dq8joftl65Gmy33DO-7Kv8/edit#gid=0) so that it populates on our website's Projects page.
+
+Project
+=====================
+
+This project uses an [Eleventy](https://www.11ty.dev/) static site.
+
+> For help, see the [documentation](/public/documentation) folder.
+
+### Getting Started
+
+#### Clone the Repository
+`git clone https://github.com/code4sac/projects.git`
+
+#### Install Dependencies
+`npm install`
+
+#### Serve the Pages
+`npm start`

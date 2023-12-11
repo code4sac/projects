@@ -1,0 +1,41 @@
+@import 'abstracts/variables';
+@import 'abstracts/functions';
+@import 'abstracts/mixins';
+@import 'base/animations';
+@import 'base/base';
+@import 'base/typography';
+@import 'base/utilities';
+@import 'layout/header';
+@import 'pages/home';
+@import "components/footer";
+@import "components/navigation-bar";
+
+/*
+Base layout styles for all pages. Includes the app theme. This file should be imported in the base layout file.
+ */
+
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.full-width {
+  width: 100%;
+  overflow: clip;
+
+  margin: 0;
+  padding: 0;
+}
+
+.hidden {
+  display: none;
+}

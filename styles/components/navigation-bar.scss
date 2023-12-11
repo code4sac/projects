@@ -1,0 +1,199 @@
+@import "../abstracts/variables";
+@import "../abstracts/mixins";
+
+/*
+Navigation bar.
+It is made up of three sections.
+- Left: Logo
+- Middle: Links with animated underline
+- Right: Dropdown link that displays extended section
+ */
+
+$toolbar_height: 84px;
+
+.navbar-toolbar {
+  @include h5-semi-bold;
+  width: 100%;
+  height: $toolbar-height;
+  color: $secondary-50;
+  background: $neutral-900;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  z-index: 4;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+
+  a, .navbar-toolbar a:visited, .navbar-toolbar a:link {
+    color: $secondary-50;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  * {
+    color: $secondary-50;
+    background: $neutral-900;
+    box-sizing: border-box;
+  }
+}
+
+.navbar-toolbar + div {
+  margin-top: $toolbar-height;
+}
+
+#navbar-toolbar-main {
+  container-type: inline-size;
+}
+.navbar-nested-parent-link img {
+  margin-left: 2px;
+}
+
+.navbar-link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: normal;
+}
+
+.navbar-link-selected {
+  font-weight: bold;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: .6em;
+}
+
+.navbar-link-selected a:active {
+  text-underline-offset: 16px;
+}
+
+.navbar-toolbar-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 16px;
+
+}
+
+.navbar-left-container {
+  display: inline-flex;
+}
+
+.navbar-left-section {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-middle-container {
+  display: inline-flex;
+}
+
+.navbar-middle-section {
+  display: none;
+  list-style-type: none;
+  column-gap: 50px;
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (min-width: $screen-md) {
+    display: inline-flex;
+  }
+}
+
+.navbar-middle-section :hover {
+}
+
+.navbar-right-container {
+  display: inline-flex;
+}
+
+.navbar-right-section {
+  display: inline-flex;
+}
+
+.navbar-extended-desktop-button {
+}
+
+
+#navbar-toolbar-extended {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-extended-content ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-extended-mobile-content ul::before {
+  content: ''
+}
+
+.navbar-extended-mobile-section li.active a {
+  color: $secondary-50;
+  background: $neutral-900;
+}
+
+.navbar-toolbar-extended {
+  margin: 0;
+  padding: 0;
+
+  color: $secondary-50;
+  background: $neutral-900;
+}
+
+.navbar-extended-desktop-container * {
+  color: black;
+  background: $secondary-50;
+}
+
+.navbar-extended-mobile-container {
+  * {
+    background: $neutral-900;
+  }
+
+  height: 100%;
+  color: $secondary-50;
+  background: $neutral-900;
+}
+
+.navbar-extended-desktop-left-container {
+
+}
+
+.navbar-extended-desktop-left-section {
+
+}
+
+.navbar-extended-desktop-right-container {
+
+}
+
+.navbar-extended-desktop-right-section {
+
+}
+
+.navbar-extended-parent-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+
+  a, a:visited, a:link, a:active {
+    color: $secondary-500;
+  }
+}
+
+.navbar-nested-extended-link-image {
+}
+
+.navbar-extended-mobile-section {
+  padding: 16px;
+}
+
+.navbar-extended-content {
+}

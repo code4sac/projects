@@ -1,0 +1,42 @@
+<!--
+Base application layout. Contains libraries and metadata that are used for all pages.
+Usage: Include `layout: layouts/base` in the Front Matter of a template file.
+-->
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="{{ description }}">
+  <title>{{ title }}</title>
+  <link rel="icon" href="/public/img/favicon.ico">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!--  Load application CSS -->
+  <link rel="stylesheet" href="/public/css/main.css">
+  <!-- Load application Javascript -->
+  <script src="/public/js/app.js" type="module" async></script>
+  <!--  SEO meta data-->
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Article",
+      "name": "Project",
+      "image": [
+        "http://project.com/public/img/openbudget.png",
+        "http://project.com/public/img/trashai.png",
+        "http://project.com/public/img/learningBlocks.png"
+      ]
+    }
+  </script>
+</head>
+
+<body>
+  <!--Load page layout-->
+  {{ content }}
+</body>
+
+</html>
