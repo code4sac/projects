@@ -1,0 +1,36 @@
+@import "../abstracts/variables";
+@import "../abstracts/mixins";
+
+/*
+Opensac.org page layout
+ */
+
+.page-title {
+    padding-top: 16px;
+}
+.project-notes {
+  padding-bottom: 16px;
+}
+
+.documentation-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  padding-top: 16px;
+}
+
+.documentation-item {
+  background-color: #f5f5f5;
+  padding: 1rem;
+  border-radius: 4px;
+  max-width: 200px;
+}
+
+.documentation-item h2 {
+  margin-bottom: 0.5rem;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
