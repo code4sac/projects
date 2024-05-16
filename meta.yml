@@ -3,8 +3,8 @@ project_type: website
 project_status: active
 description: This is our project idea funnel. This is where we collect ideas, vet ideas, and convert those ideas into active projects.
 comments: 
-communications: Slack
-channels: \#proj-opensacorg
+communications:
+channels:
 image_url: opensac.jpg
 project_partner:
 project_lead:
@@ -46,4 +46,4 @@ resources:
   documentation:
   tutorials:
 screenshots:
-  - opensac.jpg
+  - opensacprojects.jpg
